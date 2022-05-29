@@ -19,9 +19,12 @@ const Mariage = () => {
     getAPI();
   }, []);
 
+  const createModal = () => {
+    console.log("ok");
+  }
   
   return (
-    <div className="d-flex flex-wrap">
+    <div className="d-flex flex-wrap justify-content-center">
       { !load && arr.map(item =>{
         return (
           item.map(img =>{
@@ -34,8 +37,10 @@ const Mariage = () => {
                 style={{
                   width:"20%",
                   backgroundSize:"cover",
-                  height:"auto"
+                  height:"auto",
+                  margin:'5px'
                 }}
+                onClick={createModal}
                 /> 
               </>
             )

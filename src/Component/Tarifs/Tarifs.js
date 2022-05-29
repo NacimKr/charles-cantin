@@ -17,16 +17,16 @@ const Tarifs = () => {
     //console.log(info);
     load ? console.log("attend") :console.log(info);
   return (
-    <div className="d-flex gap-3 justify-content-center flex-wrap w-75 m-auto">
+    <div className=" w-100 d-flex gap-3 justify-content-center flex-wrap m-auto">
     {!load && info.map((item,key) => {
       return(
-      <div key={key} index={key} className=" mt-5">
-        <div className="card" style={{width: "18rem"}}>
+      <div key={key} index={key} className="mt-5 w-25" >
+        <div className="card border-secondary" style={{width: "25rem"}}>
           <img src={`http://localhost:1337${item.attributes.Images.data[0].attributes.formats.thumbnail.url}`} alt="" style={{backgroundSize: "cover"}}/>
-          <div className="card-body">
+          <div className="card-body" style={{height: "15rem"}}>
             <h5 className="card-title">{item.attributes.Titre}</h5>
             <p className="card-text">{item.attributes.Description}</p>
-            <a href="#" className="btn btn-primary">{item.attributes.Price}</a>
+            <a href="#" className="btn btn-secondary">{item.attributes.Price}</a>
           </div>
         </div>
       </div>
