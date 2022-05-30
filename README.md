@@ -12,7 +12,7 @@ Puis lancez la commande npm run develop pour aller sur le panel d'administration
 Puis cliquez sur http://localhost:1337/admin
 
 ## Vous devriez arrivez un formulaire de login Voici les coordonnées à saisir
-Login test@gmail.com
+Login test@gmail.com <br/>
 Mot de passe : Strapi1412**
 
 Puis retournez sur votre application et rafraichissez la page vous devriez avoir une page d'accueil avec une image en fond et le logo de charles cantin
