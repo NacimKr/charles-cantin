@@ -8,7 +8,7 @@ const Contact = () => {
     const [state, handleSubmit] = useForm("xyyoobvz");
 
     if (state.succeeded) {
-        return <p>Merci pour votre message</p>;
+        return <p class="text-center">Merci pour votre message</p>;
     }
 
   return (
@@ -33,7 +33,7 @@ const Contact = () => {
         <label for="floatingTextarea">Votre message</label>
 
         <div class="form-floating my-3">
-          <textarea id="message" name="message" class="form-control bg-light border-secondary" placeholder="Leave a comment here" style={{resize:"none", height:"250px"}} id="floatingTextarea" ></textarea>
+          <textarea name="message" class="form-control bg-light border-secondary" placeholder="Leave a comment here" id="floatingTextarea" style={{resize:"none", height:"250px"}}  ></textarea>
           <ValidationError 
             prefix="Message" 
             field="message"
