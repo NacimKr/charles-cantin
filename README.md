@@ -1,6 +1,6 @@
 # Getting Started with Create React App and Strapi
 
-git clone 
+git clone https://github.com/NacimKr/charles-cantin.git
 
 Puis ouvrez le sur votre editeur de code
 Allez dans le dossier en faisant un cd/charlescantin/charles-cantin
